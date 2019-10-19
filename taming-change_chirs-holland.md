@@ -1,0 +1,173 @@
+# Taming Change
+## Chris Holland
+- @chrisholland
+- Slides: http://bit.ly/taming-change
+
+## Notes
+### Overview
+- Look at the past and how we used to write software
+- How we get ourselves into trouble
+- How we get ourselves out of trouble, from an engineering angle and a human angle
+
+### Act 1
+- WarGames movie reference
+  - The premise behind the movie is that humans would be too afraid to press the button to launch nuclear warheads, so they have a computer handle it instead
+- In the 50's/60's, we built a defensive system that was similar.
+  - SAGE - Semi-Automatic-Ground-Environment
+    - A computer that could perform real-time targeting calculations for interceptions
+    - 4 stories, 3 and a half acres of floor space
+    - The machines were built in conjunction with IBM, called the AN/FSQ-7
+    - Each machine weighed 250 tons and could process 75,000 instructions/second
+    - 24 machines in the building
+    - A smartphone is approximately 1 million times faster than one of those machines
+- Design and Planning of the SAGE system
+  - Outcomes
+    - 5x as many instructions as estimated
+    - Operational in 50's and 60's, and into the 80's
+    - Billions of dollars - more expensive than the Manhattan project
+    - Only caught 1/4 of the enemy bombers
+  - The planning phase of the SAGE project is very similar to the waterfall methodology
+- Waterfall model
+  - First presented by Dr. Winston W. Royce in 1970
+  - Several iterations introducing feedback earlier in the process
+  - "Waterfall" coined by Bell & Thayer in 1976
+    - "Software requirements: Are they really a problem?"
+  - Adopted by the U.S. DOD in 1985
+- "Modern-Day" Waterfall real-world scenario - from his perspective
+  - Small feature w/ high $$ impact
+  - Waterfall Artifacts
+    - PRD: Product Requirements Document
+    - TID: Technical Implementation Document
+      - Diagrams: architecture, ERD, Data-flow
+      - Failure modes
+      - DB Schemas
+      - Scaling, load estimates
+      - Release procedures
+      - logging
+      - business metrics tracking
+    - QAP: QA testing plan
+    - SEP: Sys. Eng. Hardware Provisioning Plan
+  - Sequencing for Q2 delivery
+    - January 2005 - product requirements document
+    - Feb 2005 - TID & QA plan
+    - May 2005 - Coding & SE Plan
+    - June 2005 - QA & Bug Fixes
+    - Launched mid-June 2005
+  - What were we trying to do?
+    - Commit to artifacts instead of committing to outcomes
+  - WE FEARED CHANGE
+- Freeze!
+  - Froze change in requirements
+  - Code freezes
+  - etc
+- Waterfall Drawbacks
+  - Product scope had to be all-encompassing
+  - Large documentation overhead
+    - documentation typically gets outdated
+  - Delayed time-to-market
+    - Missed revenue
+    - Missed learning opportunities
+  - Resistance to change
+
+- Then vs Now
+  - Then
+    - Computing resources were shared and scarce
+    - Long feedback cycles meant mistakes were expensive
+    - You **had to** plan ahead of coding
+    - Computing driven business opportunites were limited
+      - "change" was less of a disruptor
+  - Now
+    - Explosion of the personal computer
+    - Explosion of computing driven business models
+    - Shrink-wrapped software -> networked software
+      - Change in software actually became practical
+    - Computing and software drove business
+      - Change is ever-present in business
+      - Resisting change hurts business
+
+### Act 2
+- Going Agile...
+- Software consultancies
+- Things you can't tell clients
+  - "I need a full spec of your desired system"
+  - "Your spec did not include X"
+  - "X wasn't in scope"
+  - All of these things are things you just have to deal with
+- The Agile Manifesto
+  - released in 2001
+  - Individuals and interactions over processes and tools
+  - Working software over comprehensive documentation
+  - Customer collaboration over contract negotiation
+  - Responding to *change* over following a plan
+- Change is software's defining characteristic
+- The Manifesto...
+  - did NOT advocate for any specific methodology
+    - did not advocate for scrum or KanBan
+    - did not advocate for extreme programming
+  - Some of its authors were adept practitioners of these methodologies, though
+- Most companies call themselves "agile"
+  - What does that mean??
+    - "we do scrum"
+    - "we have CI/CD"
+    - "we use an Agile framework"
+  - How often do you ship features?
+    - "We do about a release a week!"
+- What happened? How did we get here?
+  - Technical debt
+    - Artifacts which make it more difficult to change a system
+    - The true definition was coined by Ward Cunningham (emphasizes mine)
+    - "Shipping first-time code is like going into debt. A little debt speeds development so long as it is paid back promptly with refactoring."
+    - "The danger occurs when the debt is not repaid. Every minute spent on code that is not quite right for the programming task of the moment counts as interest on that debt."
+    - "Entire organizations can be brought to a standstill because of technical debt."
+  - Scrum all the things! Ignore the technical debt!
+  - Scrum vs technical debt
+    - If tech debt is a brick and we decide to scrum all the things...
+      - Sprint 1: ship a feature
+        - drop a brick
+      - Sprint 2: ship a feature
+        - jump over the first brick, drop another brick, and keep going
+      - Repeat x10
+  - What happens when we lay enough bricks?
+    - We get a wall!
+  - What happens when we sprint towards a wall?
+    - :)
+- Are we really responding to change?
+### Act 3
+- Manifesto: what we missed
+  - 12 principles
+    - One of them says "Continuous attention to technical excellence enhances good design and agility"
+  - What is technical excellence?
+    - Possible considerations:
+      - Software that responds to change
+      - Add features without breaking things
+      - Ship features at a sustained pace
+    - Breaking things
+      - Large system with a bunch of tight couplings all over the place
+      - Results in the change of one thing breaking everything
+      - Refactoring comes into play here - change tight couplings to loose couplings. Change one thing, break nothing.
+    - Sustained Pace
+      - Making your software more aligned with the business.
+  - Why do we NOT refactor?
+    - We fear breaking things
+    - We fear change
+- How do we alleviate this fear of change?
+  - Better software
+    - Patterns
+    - Test driven development
+    - Clean code
+- Test Driven Development Workflow
+  - Write a small test
+  - Write code to make the test pass
+  - Run the test suite
+
+- The Human Element
+  - we need to ask better questions
+  - No one wants to be a dissenter - GroupThink
+  - Groupthink occurs when a group of well-intentioned people make irrational or non-optimal decisions that are spurred by the urge to conform or the discouragement of dissent
+- tl;dr hire more diverse candidates, ask more relevant questions, define technical excellence, stop laying bricks, and truly respond to change that drives business
+
+
+## Key Takeaways
+- Technical excellence needs to be at the center of everything we do instead of building teams in the opposite direction
+  - If you build agile teams around change-resistant software, things will explode because they are simply incompatible.
+- Test Driven Development is a good thing

@@ -1,0 +1,94 @@
+# Keynote: Making it easy to follow best practices
+## Chris Fritz
+- on the core Vue team
+* this dude used to be a teacher and is telling people that he is going to wait until there is an acceptable volume in here
+
+## Notes
+- How many people are for following best practices? How many people like making things easier?
+- Sharing slides online... he asked people to not take notes
+
+### What is the point of "best practices?"
+- Sometimes the phrase "best practices" gets in the way of what we all want
+- What do we all want?
+  - Attract more talent
+  - simpler maintenance
+  - faster development
+  - fewer bugs
+  - more learning
+  - higher retention
+    - super uncommon in this industry
+    - you lose so much institutional knowledge this way
+- Developers need to feel...
+  - competent
+    - If you drop a dev into a job where they don't know how to do anything and they're not given the resources to learn, they're gonna feel stupid
+  - engaged
+    - they need to feel hungry and passionate. They are most passionate when they get chances to learn new things and solve novel problems
+  - Valued
+    - they need to want to come to work every day because of the culture
+- Developer happiness
+  - This is the number one goal for any development team. This is the one metric that really matters
+  - A lot of people like to focus on productivity, but you need to focus on developers feeling competent, engaged, and valued. With these, you get all of the other stuff for free.
+- Best practices?
+  - no! Instead, use the phrase "chosen conventions."
+  - we shouldn't use something just because it's considered a best practice, especially if it doesn't make sense for our use cases
+  - he doesn't think a lot of things have best practices
+- The talk is about chosen conventions instead of best practices
+- Concention adoption stages
+  - choosing
+  - implementing
+  - maintaining
+- Choosing conventions
+  - Define the problems
+    - Objectivity and absolutes don't exist in human systems
+    - Define technical problems in terms of **specific**, **personal**, and **emotional**
+      - example: you're working on performance issues. It may be that when you dig down and ask the developer "why do you want to work on this? How does it affect you emotionally?" You might find they work on that because it is an interesting challenge that they would prefer to work on instead of the day-to-day
+  - Avoid bikeshedding
+    - time-constrained voting
+      - depending on the complexity of the thing, you could give someone a certain amount of time to discuss a certain thing. after that time, everyone votes on what they prefer and everyone gets the same vote
+    - Use 3-month discussion freezes
+      - we are not allowed to discuss this again for 3 months. otherwise, everyone keeps bringing it back up
+  - Convention guidelines
+    - enable dumb devs to write great code
+    - conventions should be easy to refactor/abandon
+      - your app will continue to evolve, so it is important to consider refactoring or abandoning conventions if conditions change
+    - Create "utils" folders for still-evolving problems
+      - Places where we put code that we don't really know the problem yet. This can help you avoid defining abstractions too hastily
+- Implementing conventions
+  - automate EVERYTHING
+    - linters (eslint, stylelint, markdownlint)
+    - formatters (prettier)
+    - image optimization (image-min)
+    - generators (hygen/plop)
+      - run a command and automatically generate some code for you
+    - Code snippets
+    - Even in your app!
+      - Make console.error fail tests
+  - Test everything
+    - or... not everything
+    - If there's something that won't break often, or something that isn't very important, or etc. then maybe it isn't worth writing a test for it
+  - Useful tests are...
+    - Visible
+      - everyone knows when they are failing
+    - Reliable
+      - tests don't fail intermittently
+      - or "well it's probably okay so let's just deploy anyway"
+    - Debuggable
+      - when a test fails, it's easy to learn why
+    - Fast
+      - tests run quickly
+      - If we have a test suite that takes 3 months to run, how often are you going to run those tests?
+  - End-to-end testing libraries
+    - He uses Cypress for 99% of tests
+    - TestCafe to test cross-browser visual consistency
+  - The 2 essential end-to-end tests
+    - Can users log in?
+    - Can users give us money?
+  - Unit testing libraries
+    - Jest?
+    - Or whatever you want to use
+  - The 2 essential unit tests
+    - Do files export the rightish thing?
+    - Does all the regex work?
+
+## Key takeaways
+- This talk became pretty worthless pretty quickly. One developer talking about his development workflow for a keynote. ???

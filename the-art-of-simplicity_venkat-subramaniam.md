@@ -1,0 +1,82 @@
+# Keynote: The Art of Simplicity
+## Venkat Subramaniam
+- @venkat_s
+- venkats@agiledeveloper.com
+* Why is JavaScript reliable? It keeps it's promises!
+
+## Notes
+- The human brain is one of the most powerful things we have at our disposal
+  - This brain is the thing that can be extremely innovative and come up with amazing things, but also the same brain that can get you into analysis paralysis and be dumbfounded
+- "Life is really simple, but we insist on making it complicated." - Confucius
+- There are two types of people:
+  - People that take complex things and make it simple, and
+  - people who make things really complicated
+- Why do we make things complex?
+  - Because it feels *good*
+  - When we make things complex, it makes you feel like you've accomplished something.
+  - If you take a simple design to your coworker, they'll probably tell you "yeah that looks simple" and you'll be disappointed.
+  - We have this misguided opinion that if we do something complex, we'll gain something from it
+- "Any intelligent fool can make things bigger, more complex, and more violent. If takes a touch of genius -- and a lot of courage -- to move in the opposite direction." - Albert Einstein
+  - When you present simple solutions at work, you will have people debate with you because it isn't complex enough
+- If simple was sitting next to us, would we know?
+  - We deal with complexities so much in our lives, how do we know something is simple?
+  - People don't have a good definition of simplicity.
+  - "This code is very simple, it is just an if statement!"
+    - ...yeah, but it's an if statement repeated 17 times in this same function!
+- Take a different approach: What is *not* simple?
+  - Simple is not *clever*
+    - When we write clever code, we feel as if we have accomplished something amazing. When we show it off, people are confused on how it works
+    - Example: a client gave me a problem to solve, and I thought I could do it in 10 minutes. Instead, I said to myself: I'm going to solve the MOTHER OF ALL PROBLEMS. I spent an hour writing that code and it was a very clever product. Three weeks later, an email said "something terrible is happening in production." I told them I would fix it, rolled back the code, and implemented the 10 minute solution and had no other problems.
+    - Write CLEAN code, not CLEVER code.
+    - Clever code is self-obfuscated
+      - developers don't even understand their own code after a few weeks
+  - Simple is not necessarily familiar
+    - Functional programming is a good example. It looks very complex at first glance, but it is really very simple - you just haven't seen it before.
+    - Is it really simple, or is it really just very familiar?
+    - Is it really complex, or is it just unfamiliar? If it is unfamiliar, we don't have any right to judge the complexity of the code.
+    - A Simple Problem
+      - Given a list of names print, in uppercase, comma separated, names of length 5
+      - Code example...
+      - May be unfamiliar, but simple!
+    - Don't confuse familiarity wit simplicity
+    - In OOP, we encapsulate moving parts, but in functional programming, we eliminate moving parts.
+  - Simplicity is not over-engineered
+    - Rube Goldberg machines are over-engineered
+  - Simple is not terse
+    - Don't confuse terse code with concise code
+      - Conside code is short
+      - Terse code is short and waiting to hurt you when you least expect it
+    - Don't make the code cryptic
+- Well then, what IS simple?
+  - Simple keeps you focused
+    - The most precious thing in the world is peoples' attention
+    - We have a very short attention span. If you can keep the attention of a programmer, that is awesome.
+    - Example: Yahoo vs Bing vs Google
+      - Yahoo has a bunch of news stories and other information that distracts you
+      - Bing has beautiful pictures that make you focus on them instead of the search
+      - Google simply has a search bar
+      - DON'T confuse simple for trivial. The search button on Google is massively packed with features behind it.
+    - It takes a lot of courage to make something simple and make something that keeps the user's focus
+    - "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away." - Antoine de Saint-Exupery
+  - Simple eliminates accidental complexity and hides inherit complexity
+    - Software systems have inherit complexity that comes from the problem's domain, but we add complexity from the solutions that we decide to implement.
+  - Simple fails less
+  - Simple is easier to understand, but simple is also easier to work with
+  - Simple is elegant
+    - When you look at something simple, you say "That's simple, and it's also elegant!"
+    - Why is the Mona Lisa the most popular painting ever? Because it is SIMPLE. There are no jewels on the lady, no fabulous clothes, no crazy landscape. It is a simple, beautiful lady.
+- Simplicity has to evolve
+  - "If you can't explain something to a first year student, then you haven't really understood it." - Richard Feynman
+- "Everything should e made as simple as possible, but not simpler." - Einstein
+- Is that simple, or can it be simpler?
+- Simple makes things easy, but it's certainly not easy to make things simple.
+- It is beneficial for multiple reasons:
+  - Remove the complexity and make the person that comes after you have an easier time
+  - Every problem I spend time fighting and struggling with makes me stronger and teaches more lessons along the way
+
+## Key Takeaways
+- Simple is a lot of things and it is also *not* a lot of things.
+- Simple is not familiar. Don't confuse familiarity of a solution with simplicity. Just because you haven't seen a functional programming approach doesn't mean it is complex.
+- Simple is not clever. It takes courage to put something simple out because people's tendency is to make things clever and complicated
+- Simple keeps you focused
+  - Bing vs Yahoo vs Google search pages - which one keeps you focused on what you're trying to do?
